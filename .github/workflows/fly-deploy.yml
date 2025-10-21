@@ -34,6 +34,6 @@ jobs:
 
       # 5️⃣ Deploy ke Fly.io
       - name: Deploy to Fly.io
-        run: flyctl deploy --remote-only
+        run: flyctl deploy --app=${{ secrets.FLY_APP_NAME }} --build-only --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
