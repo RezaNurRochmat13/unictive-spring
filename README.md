@@ -1,6 +1,6 @@
-# 🌱 Spring Boot Boilerplate Template
+# Unictive Spring
 
-A clean and modular Spring Boot boilerplate to kickstart your next project using best practices for scalable architecture.
+Unictive Auth Spring
 
 ---
 
@@ -22,8 +22,8 @@ Ensure you have the following installed:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/spring-boot-boilerplate.git
-cd spring-boot-boilerplate
+git clone https://github.com/RezaNurRochmat13/unictive-spring.git
+cd unictive-spring
 
 # 2. Build the project
 mvn clean install

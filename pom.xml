@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spring</groupId>
-	<artifactId>boilerplate</artifactId>
+	<artifactId>unictive</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>boilerplate</name>
-	<description>Simple boilerplate project for Spring Boot</description>
+	<name>unictive</name>
+	<description>Unictive Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>

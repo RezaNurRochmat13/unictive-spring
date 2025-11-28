@@ -1,13 +1,13 @@
 services:
   postgres:
     image: postgres:15
-    container_name: java-boilerplate-postgres
+    container_name: unictive-spring-postgres
     environment:
-      POSTGRES_USER: java-boilerplate
-      POSTGRES_PASSWORD: java-boilerplate
-      POSTGRES_DB: java-boilerplate-db
+      POSTGRES_USER: unictive
+      POSTGRES_PASSWORD: unictive
+      POSTGRES_DB: unictive-db
     ports:
-      - "5434:5432"
+      - "5441:5432"
     volumes:
       - java_postgres_data:/var/lib/postgresql/data
 
