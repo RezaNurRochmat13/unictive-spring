@@ -12,10 +12,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableAsync
 @EnableScheduling
 @EnableCaching
-public class BoilerplateApplication {
+public class UnictiveApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BoilerplateApplication.class, args);
+		SpringApplication.run(UnictiveApplication.class, args);
 	}
 
 }

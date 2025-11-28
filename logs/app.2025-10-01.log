@@ -156,7 +156,7 @@ org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.spring.unictive.BoilerplateApplication.main(BoilerplateApplication.java:18)
+	at com.spring.unictive.UnictiveApplication.main(BoilerplateApplication.java:18)
 Caused by: org.postgresql.util.PSQLException: Connection to localhost:5434 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:373)
 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
@@ -222,7 +222,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.spring.unictive.BoilerplateApplication.main(BoilerplateApplication.java:18)
+	at com.spring.unictive.UnictiveApplication.main(BoilerplateApplication.java:18)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
