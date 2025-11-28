@@ -27,9 +27,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User createUser(User user) {
+    public User createUser(User payload) {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        User user = new User();
+        user.setUsername(payload.getUsername());
+        user.setEmail(payload.getEmail());
+        user.setPassword(passwordEncoder.encode(payload.getPassword()));
+        user.setRole(payload.getRole());
+        user.setHobbies(payload.getHobbies());
 
         return userRepository.save(user);
     }
@@ -41,9 +46,12 @@ public class UserServiceImpl implements UserService {
 
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-        user.setEmail(payload.getEmail());
         user.setUsername(payload.getUsername());
+        user.setEmail(payload.getEmail());
         user.setPassword(passwordEncoder.encode(payload.getPassword()));
+        user.setRole(payload.getRole());
+        user.setHobbies(payload.getHobbies());
+
         return userRepository.save(user);
     }
 
