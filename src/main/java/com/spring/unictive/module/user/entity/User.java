@@ -1,5 +1,6 @@
 package com.spring.unictive.module.user.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.spring.unictive.module.hobby.entity.Hobby;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -40,9 +41,11 @@ public class User implements UserDetails {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    private Role role;
+    @Column(nullable = false)
+    private Role role = Role.USER; // Default role
 
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role.name()));
     }
@@ -68,5 +71,6 @@ public class User implements UserDetails {
     }
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    public List<Hobby> hobbies = new ArrayList<>();
+    @JsonIgnore
+    private List<Hobby> hobbies = new ArrayList<>();
 }
